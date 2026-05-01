@@ -15,5 +15,12 @@ namespace Raamatukogu_laenutussüsteem
             KestusMinutites = kestus;
             Diktor = diktor;
         }
+
+        public override bool OnSaadaval()
+        {
+            return true;
+        }
+
+        public override string GetInfo() => $"Audiokirjandus: {Pealkiri} ({VäljaandmiseAasta})";
     }
 }

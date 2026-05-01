@@ -11,12 +11,12 @@ namespace Raamatukogu_laenutussüsteem
         public int VäljaandmiseAasta { get; set; }       //год издания
         public string LaenutuseÜldreeglid { get; set; }  //общие правила выдачи
         public bool saadaval { get; set; }               //доступен ли?
-        public string MillalTagastada { get; set; }      //дата возврата
+        public DateTime? MillalTagastada { get; set; }      //дата возврата
         public string žanr { get; set; }
 
-        public Teavik(string pealkiri, string autor, string laenutuseÜldreeglid, int väljaandmiseAasta, string millalTagastada)
+        public Teavik(string pealkiri, string autor, string laenutuseÜldreeglid, int väljaandmiseAasta)
         {
-
+            saadaval = true;
 
             Pealkiri = pealkiri;
 
@@ -26,7 +26,6 @@ namespace Raamatukogu_laenutussüsteem
 
             LaenutuseÜldreeglid = laenutuseÜldreeglid;
 
-            MillalTagastada = millalTagastada;
 
             // 2.
             if (pealkiri == "")
@@ -48,7 +47,7 @@ namespace Raamatukogu_laenutussüsteem
             return $"{Pealkiri} - {Autor} ({VäljaandmiseAasta})";
         }
 
-        public virtual string tähtaeg() //кода вернуть
+        public virtual DateTime? tähtaeg() //кода вернуть
         {
             return MillalTagastada;
         }
@@ -58,6 +57,32 @@ namespace Raamatukogu_laenutussüsteem
             return saadaval;
         }
 
+        public virtual void GetTeavik()
+        {
+            if(OnSaadaval())
+            {
+                saadaval = false;
+                MillalTagastada = DateTime.Now.AddDays(30);
+            }
+            else
+            {
+                throw new Exception("матерьяла нету");
+            }          
+        }
 
+        public virtual void ReturnTeavik()
+        {
+            if (!OnSaadaval())
+            {
+                saadaval = true;
+                MillalTagastada = null;
+            }
+            else
+            {
+                throw new Exception("книга в наличии");
+            }
+
+
+        }
     }
 }
