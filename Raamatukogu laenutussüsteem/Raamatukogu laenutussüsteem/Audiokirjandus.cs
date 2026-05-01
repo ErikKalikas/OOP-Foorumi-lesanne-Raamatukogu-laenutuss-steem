@@ -9,8 +9,8 @@ namespace Raamatukogu_laenutussüsteem
         public int KestusMinutites { get; set; }    
         public string Diktor { get; set; }  //имя
 
-        public Audiokirjandus(string pealkiri, string autor, string laenutuseÜldreeglid, int aasta, string millalTagastada, int kestus, string diktor)
-            : base(pealkiri, autor, laenutuseÜldreeglid, aasta, millalTagastada)
+        public Audiokirjandus(string pealkiri, string autor, string laenutuseÜldreeglid, int aasta ,int kestus, string diktor)
+            : base(pealkiri, autor, laenutuseÜldreeglid, aasta)
         {
             KestusMinutites = kestus;
             Diktor = diktor;

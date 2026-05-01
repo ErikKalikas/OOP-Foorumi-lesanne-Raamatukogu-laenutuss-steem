@@ -42,10 +42,39 @@ namespace Raamatukogu_laenutussüsteem
 
         }
 
+        public virtual string GetInfo1()
+        {
+            if (OnSaadaval())
+            {
+                return $"{Pealkiri} - {Autor} {VäljaandmiseAasta} - (on laos)";
+            }
+            else
+            {
+                return $"{Pealkiri} - {Autor} {VäljaandmiseAasta}\n\n(võtsite raamatu {DateTime.Now})\n\n(raamat tagastatakse {MillalTagastada} kuupäeval)";
+            }
+        }
+
+        public virtual string GetInfo2()
+        {
+            if (OnSaadaval())
+            {
+                return $"{Pealkiri} - {Autor} {VäljaandmiseAasta} - (on laos)";
+            }
+            else
+            {
+                return $"{Pealkiri} - {Autor} {VäljaandmiseAasta} (ei ole)";
+            }
+        }
+
+
+
         public virtual string GetInfo()
         {
-            return $"{Pealkiri} - {Autor} ({VäljaandmiseAasta})";
+            return GetInfo1();
         }
+
+        
+
 
         public virtual DateTime? tähtaeg() //кода вернуть
         {
@@ -56,6 +85,7 @@ namespace Raamatukogu_laenutussüsteem
         {
             return saadaval;
         }
+
 
         public virtual void GetTeavik()
         {

@@ -9,8 +9,8 @@ namespace Raamatukogu_laenutussüsteem
         public string Õppeaine { get; set; }
         public int Klass { get; set; }
 
-        public Õpik(string pealkiri, string autor, string laenutuseÜldreeglid, int aasta, string millalTagastada, string õppeaine, int klass)
-            : base(pealkiri, autor, laenutuseÜldreeglid, aasta, millalTagastada)
+        public Õpik(string pealkiri, string autor, string laenutuseÜldreeglid, int aasta, string õppeaine, int klass)
+            : base(pealkiri, autor, laenutuseÜldreeglid, aasta)
         {
             Õppeaine = õppeaine;
             Klass = klass;

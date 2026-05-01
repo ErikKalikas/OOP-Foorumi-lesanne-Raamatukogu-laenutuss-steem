@@ -9,8 +9,8 @@ namespace Raamatukogu_laenutussüsteem
         public string RaamatuMaterjal { get; set; }
 
         // Передаем все нужные параметры в базовый класс Teavik через : base(...)
-        public Raamat(string pealkiri, string autor, string laenutuseÜldreeglid, int aasta, string millalTagastada, string materjal)
-            : base(pealkiri, autor, laenutuseÜldreeglid, aasta, millalTagastada)
+        public Raamat(string pealkiri, string autor, string laenutuseÜldreeglid, int aasta, string materjal)
+            : base(pealkiri, autor, laenutuseÜldreeglid, aasta)
         {
             RaamatuMaterjal = materjal;
         }

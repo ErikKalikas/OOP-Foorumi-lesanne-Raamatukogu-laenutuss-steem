@@ -12,8 +12,8 @@ namespace Raamatukogu_laenutussüsteem
         public string Sagedus { get; set; }     //Периодичность
 
         public Ajakiri(string pealkiri, string autor, string laenutuseÜldreeglid, int aasta,
-                       string millalTagastada, int väljaandeNumber, string sagedus)
-            : base(pealkiri, autor, laenutuseÜldreeglid, aasta, millalTagastada)
+                        int väljaandeNumber, string sagedus)
+            : base(pealkiri, autor, laenutuseÜldreeglid, aasta)
         {
             VäljaandeNumber = väljaandeNumber;
             Sagedus = sagedus;

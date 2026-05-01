@@ -10,7 +10,7 @@ namespace Raamatukogu_laenutussüsteem
 
          string GetInfo();     //предоставлять информацию о себе
 
-         string tähtaeg();  //рассчитывать срок возврата
+         DateTime? tähtaeg();  //рассчитывать срок возврата
 
          bool OnSaadaval();   //проверять, доступен ли материал
     }

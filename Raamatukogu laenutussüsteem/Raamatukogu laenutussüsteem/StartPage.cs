@@ -6,50 +6,50 @@
         {
             List<Raamat> raamatud = new List<Raamat>
             {
-                new Raamat("Sipsik", "Eno Raud", "Reegel1", 1962, "2026-05-20", "Paber"),
-                new Raamat("Kevade", "Oskar Luts", "Reegel1", 1912, "2026-05-20", "Paber"),
-                new Raamat("Tõde ja õigus", "A. H. Tammsaare", "Reegel1", 1929, "2026-05-20", "Paber"),
-                new Raamat("Arabella", "Aino Pervik", "Reegel1", 1982, "2026-05-20", "Paber"),
-                new Raamat("Nukitsamees", "Oskar Luts", "Reegel1", 1920, "2026-05-20", "Paber")
+                new Raamat("Sõda ja rahu", "Lev Tolstoi", "30 päeva", 1869, "Paber"),
+                new Raamat("1984", "George Orwell", "30 päeva", 1949, "Paber"),
+                new Raamat("Hobbit", "J.R.R. Tolkien", "30 päeva", 1937, "Paber"),
+                new Raamat("Alkeemik", "Paulo Coelho", "30 päeva", 1988, "Paber"),
+                new Raamat("Dracula", "Bram Stoker", "30 päeva", 1897, "Paber")
             };
 
             List<Õpik> õpikud = new List<Õpik>
             {
-                new Õpik("Matemaatika", "Autor A", "Reegel2", 2020, "2026-06-01", "Matemaatika", 9),
-                new Õpik("Eesti keel", "Autor B", "Reegel2", 2021, "2026-06-01", "Eesti keel", 9),
-                new Õpik("Ajalugu", "Autor C", "Reegel2", 2019, "2026-06-01", "Ajalugu", 8),
-                new Õpik("Füüsika", "Autor D", "Reegel2", 2022, "2026-06-01", "Füüsika", 10),
-                new Õpik("Inglise keel", "Autor E", "Reegel2", 2023, "2026-06-01", "Inglise keel", 7)
+                new Õpik("Matemaatika", "Ivan Ivanov", "14 päeva", 2020, "Matemaatika", 5),
+                new Õpik("Eesti keel", "Mari Maasikas", "14 päeva", 2019, "Eesti keel", 6),
+                new Õpik("Füüsika", "Jaan Tamm", "14 päeva", 2018, "Füüsika", 7),
+                new Õpik("Keemia", "Peeter Saar", "14 päeva", 2021, "Keemia", 8),
+                new Õpik("Bioloogia", "Kati Kask", "14 päeva", 2022, "Bioloogia", 9)
             };
 
             List<Audiokirjandus> audiokirjandus = new List<Audiokirjandus>
             {
-                new Audiokirjandus("Harry Potter", "J.K. Rowling", "Reegel3", 2000, "2026-07-01", 600, "Diktor 1"),
-                new Audiokirjandus("Hobbit", "J.R.R. Tolkien", "Reegel3", 1937, "2026-07-01", 500, "Diktor 2"),
-                new Audiokirjandus("1984", "George Orwell", "Reegel3", 1949, "2026-07-01", 450, "Diktor 3"),
-                new Audiokirjandus("Dune", "Frank Herbert", "Reegel3", 1965, "2026-07-01", 800, "Diktor 4"),
-                new Audiokirjandus("Foundation", "Isaac Asimov", "Reegel3", 1951, "2026-07-01", 700, "Diktor 5")
+                new Audiokirjandus("Harry Potter", "J.K. Rowling", "7 päeva", 2001, 600, "John Smith"),
+                new Audiokirjandus("Hobbit", "Tolkien", "7 päeva", 1937, 700, "David Brown"),
+                new Audiokirjandus("Düün", "Frank Herbert", "7 päeva", 1965, 900, "Mike Johnson"),
+                new Audiokirjandus("Dracula", "Bram Stoker", "7 päeva", 1897, 500, "Chris Lee"),
+                new Audiokirjandus("Alkeemik", "Coelho", "7 päeva", 1988, 300, "Anna White")
             };
 
             List<E_raamat> e_raamatud = new List<E_raamat>
             {
-                new E_raamat("E-book 1", "Autor 1", "Reegel4", 2025, "2026-05-20", "PDF", 2.5),
-                new E_raamat("E-book 2", "Autor 2", "Reegel4", 2025, "2026-05-20", "EPUB", 1.2),
-                new E_raamat("E-book 3", "Autor 3", "Reegel4", 2024, "2026-05-20", "PDF", 5.0),
-                new E_raamat("E-book 4", "Autor 4", "Reegel4", 2024, "2026-05-20", "MOBI", 0.8),
-                new E_raamat("E-book 5", "Autor 5", "Reegel4", 2023, "2026-05-20", "PDF", 3.1)
+                new E_raamat("Clean Code", "Robert Martin", "10 päeva", 2008, "PDF", 5.2),
+                new E_raamat("C# Basics", "Microsoft", "10 päeva", 2021, "EPUB", 3.1),
+                new E_raamat("Java Guide", "Oracle", "10 päeva", 2020, "PDF", 4.7),
+                new E_raamat("Python 101", "Guido", "10 päeva", 2019, "MOBI", 2.9),
+                new E_raamat("Algorithms", "CLRS", "10 päeva", 2009, "PDF", 6.5)
             };
 
             List<Ajakiri> ajakirjad = new List<Ajakiri>()
             {
-                new Ajakiri("Teadusmaailm", "Autor1", "Tavaline reegel", 2020, "2026-01-10", 1, "Kord kuus"),
-                new Ajakiri("Mood & Stiil", "Autor2", "Tavaline reegel", 2022, "2026-01-12", 2, "Kord nädalas"),
-                new Ajakiri("Sport Weekly", "Autor3", "Tavaline reegel", 2023, "2026-01-15", 3, "Kord nädalas"),
-                new Ajakiri("Laste Maailm", "Autor4", "Tavaline reegel", 2021, "2026-01-20", 4, "Kord kuus"),
-                new Ajakiri("Uudised Täna", "Autor5", "Tavaline reegel", 2024, "2026-01-25", 5, "Iga päev")
+                new Ajakiri("National Geographic", "Various", "7 päeva", 2023, 1, "Kuu"),
+                new Ajakiri("Time", "Various", "7 päeva", 2023, 2, "Nädal"),
+                new Ajakiri("Forbes", "Various", "7 päeva", 2023, 3, "Kuu"),
+                new Ajakiri("Science", "Various", "7 päeva", 2023, 4, "Nädal"),
+                new Ajakiri("Nature", "Various", "7 päeva", 2023, 5, "Nädal")
             };
 
-            Info.info(raamatud, õpikud, audiokirjandus, e_raamatud, ajakirjad);
+            Info.menu1(raamatud, õpikud, audiokirjandus, e_raamatud, ajakirjad);
 
         }
     }

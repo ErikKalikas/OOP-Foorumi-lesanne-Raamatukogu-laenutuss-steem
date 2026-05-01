@@ -9,8 +9,8 @@ namespace Raamatukogu_laenutussüsteem
         public string FailiFormaat { get; set; } // Например, "PDF"
         public double FailiSuurusMB { get; set; }
 
-        public E_raamat(string pealkiri, string autor, string laenutuseÜldreeglid, int aasta, string millalTagastada, string formaat, double suurus)
-            : base(pealkiri, autor, laenutuseÜldreeglid, aasta, millalTagastada)
+        public E_raamat(string pealkiri, string autor, string laenutuseÜldreeglid, int aasta, string formaat, double suurus)
+            : base(pealkiri, autor, laenutuseÜldreeglid, aasta)
         {
             FailiFormaat = formaat;
             FailiSuurusMB = suurus;

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Raamatukogu laenutussüsteem")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8e1ccd32b3c575c42322b1dfeab89f35f432fa38")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+57845215a88ba498d4552394e625ede738153cd9")]
 [assembly: System.Reflection.AssemblyProductAttribute("Raamatukogu laenutussüsteem")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Raamatukogu laenutussüsteem")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
