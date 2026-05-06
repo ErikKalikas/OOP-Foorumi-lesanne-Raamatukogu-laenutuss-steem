@@ -14,14 +14,14 @@ namespace Raamatukogu_laenutussüsteem
                 try
                 {
                     Console.WriteLine("");
-                    Console.WriteLine("kuuva tüpp");
-                    Console.WriteLine("0 - lõpp");
-                    Console.WriteLine("1 - Raamatud");
-                    Console.WriteLine("2 - Õpikud");
-                    Console.WriteLine("3 - Audiokirjandus");
-                    Console.WriteLine("4 - E_raamatud");
-                    Console.WriteLine("5 - Ajakirikud");
-                    Console.WriteLine("6 - raamatuid, mida pole");
+                    Console.WriteLine("             kuuva tüpp");
+                    Console.WriteLine("0 - | lõpp                   |");
+                    Console.WriteLine("1 - | Raamatud               |");
+                    Console.WriteLine("2 - | Õpikud                 |");
+                    Console.WriteLine("3 - | Audiokirjandus         |");
+                    Console.WriteLine("4 - | E_raamatud             |");
+                    Console.WriteLine("5 - | Ajakirikud             |");
+                    Console.WriteLine("6 - | raamatuid, mida pole   |");
                     Console.WriteLine("");
                     int peamineValik = int.Parse(Console.ReadLine());
                     Console.Clear();
@@ -63,7 +63,7 @@ namespace Raamatukogu_laenutussüsteem
                 if(peamineValik == 3 || peamineValik == 4)
                 {
                     Console.WriteLine("---------------------------------------------------");
-                    Console.WriteLine("1 - raamat kätte võtta");
+                    Console.WriteLine("1 - alla laadida");
                     Console.WriteLine("2 - lõpp");
                     Console.WriteLine("");
                 }
